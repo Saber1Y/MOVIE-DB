@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
-:root {
-  --primary-color: #22254b;
-  --secondary-color: #373b69;
-}
-
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #de737a;
+  --secondary-color: #c22e37;
+  --background-color: #e2f8f7;
 }
 
 body {
@@ -22,7 +23,7 @@ header {
 }
 
 .search {
-  background-color: transparent;
+  background-color: #ffffff;
   border: 2px solid var(--primary-color);
   border-radius: 50px;
   font-family: inherit;
@@ -31,13 +32,10 @@ header {
   color: #fff;
 }
 .search::-moz-placeholder {
-  color: #7378c5;
-}
-.search:-ms-input-placeholder {
-  color: #7378c5;
+  color: #c22e37;
 }
 .search::placeholder {
-  color: #7378c5;
+  color: #c22e37;
 }
 .search:focus {
   outline: none;
@@ -53,7 +51,7 @@ main {
 .movie {
   width: 300px;
   margin: 1rem;
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
@@ -64,7 +62,7 @@ main {
 }
 
 .movie-info {
-  color: #eee;
+  color: #c22e37;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,7 +74,7 @@ main {
   margin-top: 0;
 }
 .movie-info span {
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   padding: 0.25rem 0.5rem;
   border-radius: 3px;
   font-weight: bold;
@@ -92,7 +90,7 @@ main {
 }
 
 .overview {
-  background-color: #fff;
+  background-color: #e2f8f7;
   padding: 2rem;
   position: absolute;
   left: 0;

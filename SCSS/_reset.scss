@@ -1,0 +1,10 @@
+$primary-color: #de737a;
+$secondary-color: #c22e37;
+$background-color: #e2f8f7;
+$txt-primary-color: #ffffff;
+
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --background-color: #{$background-color};
+  }
