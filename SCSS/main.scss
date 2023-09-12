@@ -8,20 +8,48 @@ body {
 }
 
 header {
-  padding: 1rem;
+  background-color: $primary-color;
   display: flex;
-  justify-content: flex-end;
-  background-color: var(--secondary-color);
+  justify-content: space-between; /* To create space between the title and search bar */
+  align-items: center; /* Center vertically */
+  padding: 1rem;
 }
 
+.title {
+  display: flex;
+  align-items: center; /* Center title and span horizontally */
+  text-align: center;
+  margin: o auto;
+}
+
+.title h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+ text-align: center;
+ align-items: center;
+ margin: auto;
+}
+
+.title span {
+  color: $txt-primary-color; /* Use your primary color for the <span> */
+  font-size: 1.5rem;
+}
+
+/* Styles for the search input */
 .search {
-  background-color: $txt-primary-color;
-  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  border: 2px solid white;
   border-radius: 50px;
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  color: #fff;
+  color: white;
+  width: 100%;
+  max-width: 300px; /* Set a maximum width for the search input if needed */
+
 
   &::placeholder {
     color: $secondary-color;
