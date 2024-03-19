@@ -16,30 +16,113 @@ body {
 }
 
 header {
-  padding: 1rem;
+  background-color: #de737a;
   display: flex;
-  justify-content: flex-end;
-  background-color: var(--secondary-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-.search {
-  background-color: #ffffff;
-  border: 2px solid var(--primary-color);
-  border-radius: 50px;
-  font-family: inherit;
-  font-size: 1rem;
+.title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: o auto;
+}
+
+.title h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.title span {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.search-form {
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-form .search-label {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+.search-form .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.search-form .search-wrapper {
+  position: relative;
+}
+.search-form .search-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 0.75rem;
+}
+.search-form .search-icon .search-icon-svg {
+  width: 1rem;
+  height: 1rem;
+  fill: #6b7280;
+}
+.search-form .search-input {
+  width: 100%;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+  font-size: 0.875rem;
+  color: #374151;
+}
+.search-form .search-input::-moz-placeholder {
+  color: #9ca3af;
+}
+.search-form .search-input::placeholder {
+  color: #9ca3af;
+}
+.search-form .search-input:focus {
+  outline: 2px solid #3b82f6;
+  border-color: #3b82f6;
+}
+.search-form .search-btn {
+  position: absolute;
+  right: 0.625rem;
+  bottom: 0.625rem;
+  background-color: #2563eb;
   padding: 0.5rem 1rem;
+  font-weight: 500;
   color: #fff;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
 }
-.search::-moz-placeholder {
-  color: #c22e37;
+.search-form .search-btn:hover {
+  background-color: #1e40af;
 }
-.search::placeholder {
-  color: #c22e37;
-}
-.search:focus {
+.search-form .search-btn:focus {
   outline: none;
-  background-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
 main {

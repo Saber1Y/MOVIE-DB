@@ -10,14 +10,14 @@ body {
 header {
   background-color: $primary-color;
   display: flex;
-  justify-content: space-between; /* To create space between the title and search bar */
-  align-items: center; /* Center vertically */
+  justify-content: space-between;
+  align-items: center; 
   padding: 1rem;
 }
 
 .title {
   display: flex;
-  align-items: center; /* Center title and span horizontally */
+  align-items: center; 
   text-align: center;
   margin: o auto;
 }
@@ -34,32 +34,94 @@ header {
 }
 
 .title span {
-  color: $txt-primary-color; /* Use your primary color for the <span> */
+  color: $txt-primary-color; 
   font-size: 1.5rem;
 }
 
-/* Styles for the search input */
-.search {
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 50px;
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  color: white;
-  width: 100%;
-  max-width: 300px; /* Set a maximum width for the search input if needed */
 
+.search-form {
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
 
-  &::placeholder {
-    color: $secondary-color;
+  .search-label {
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #374151;
   }
 
-  &:focus {
-    outline: none;
-    background-color: var(--primary-color);
+  .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+  }
+
+  .search-wrapper {
+      position: relative;
+  }
+
+  .search-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 0.75rem;
+
+      .search-icon-svg {
+          width: 1rem;
+          height: 1rem;
+          fill: #6b7280;
+      }
+  }
+
+  .search-input {
+      width: 100%;
+      padding: 1rem;
+      padding-left: 2.5rem;
+      border-width: 1px;
+      border-color: #d1d5db;
+      border-radius: 0.5rem;
+      background-color: #f9fafb;
+      font-size: 0.875rem;
+      color: #374151;
+      &::placeholder {
+          color: #9ca3af;
+      }
+      &:focus {
+          outline: 2px solid #3b82f6;
+          border-color: #3b82f6;
+      }
+  }
+
+  .search-btn {
+      position: absolute;
+      right: 0.625rem;
+      bottom: 0.625rem;
+      background-color: #2563eb;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      color: #fff;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      border: none;
+      cursor: pointer;
+      &:hover {
+          background-color: #1e40af;
+      }
+      &:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+      }
   }
 }
+
 
 main {
   display: flex;
