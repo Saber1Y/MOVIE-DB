@@ -69,6 +69,9 @@ header {
 .search-form .search-input {
   width: 100%;
   padding: 0.89rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-left: 2.5rem;
   margin-right: 10.5em;
   border-width: 1px;
